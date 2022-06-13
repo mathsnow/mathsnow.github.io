@@ -31,12 +31,15 @@ To execute statements conditionally in thumb2, you have two options:
 
 Individual conditional branches are totally supported in thumb. This means you can put a condition code after a branch command and it will branch under the condition just like it does in the ARM instruction set.
 
-For example, the code below branches if *r1* equals *r2*:
+For example, the code below does the same thing as the first code snippet for ARM set:
 
 {% highlight armasm %}
 CMP r1 , r2
-BEQ target
-target:
+BLE exit
+CMP r2 , r3
+BLE exit
+MOV r4 , r5
+exit:
 {% endhighlight %}
 
 #### 2. Using an *IT* block
