@@ -18,9 +18,9 @@ For example, the following code written in ARM set to update the value of R4 if 
 values R0 is greater than R1 and R2 is greater than R3
 
 {% highlight armasm %}
-CMP R0, R1 ; Compare R0 and R1, setting flags
-CMPGT R2, R3 ; If 'greater than', compare R2 and R3, setting flags
-MOVGT R4, R5 ; If still 'greater than', do R4 = R5
+CMP R0 , R1 ; Compare R0 and R1, setting flags
+CMPGT R2 , R3 ; If 'greater than', compare R2 and R3, setting flags
+MOVGT R4 , R5 ; If still 'greater than', do R4 = R5
 {% endhighlight %}
 
 However, this code won't run in ARM Cortex M3 since it uses the the thumb2 instruction set.
@@ -48,10 +48,10 @@ If you want to use ARM set style conditional statements except conditional branc
 Let me write the code I wrote for the ARM instruction set above for thumb2:
 
 {% highlight armasm %}
-CMP R0, R1 ; Compare R0 and R1, setting flags
+CMP R0 , R1 ; Compare R0 and R1, setting flags
 ITT GT ; Skip next two instructions unless GT condition holds
-CMPGT R2, R3 ; If 'greater than', compare R2 and R3, setting flags
-MOVGT R4, R5 ; If still 'greater than', do R4 = R5
+CMPGT R2 , R3 ; If 'greater than', compare R2 and R3, setting flags
+MOVGT R4 , R5 ; If still 'greater than', do R4 = R5
 {% endhighlight %}
 
 THE *IT* block of course imposes some restrictions on the programmer like:
