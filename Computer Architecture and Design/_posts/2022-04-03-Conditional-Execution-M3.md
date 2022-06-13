@@ -1,6 +1,4 @@
-# Conditional Execution in ARM Cortex M3 processors
-
-## Thumb vs ARM instruction sets
+# Thumb vs ARM instruction sets
 
 As far as we are concerned, the thumb instruction set is a superset of the plain old ARM instruction set. However, since thumb2 came out, from a programmer's viewpoint, the differences between thumb2 and the ARM  set have almost ceased to be. And, so now the programmer can use almost all of the ARM instruction set in thumb.
 
