@@ -1,7 +1,9 @@
-# Thumb vs ARM instruction sets
+---
+tags: Cortex M3 ARM thumb
+---
+### Thumb vs ARM instruction sets
 
 As far as we are concerned, the thumb instruction set is a superset of the plain old ARM instruction set. However, since thumb2 came out, from a programmer's viewpoint, the differences between thumb2 and the ARM  set have almost ceased to be. And, so now the programmer can use almost all of the ARM instruction set in thumb.
-
 ### Cortex M3 processors only execute in thumb state
 
 As you might know, the ARM Cortex M3 is only capable of running thumb instructions. What this means is that although from thumb2, we can use almost the regular ARM instruction set with assembly for the M3, one crucial difference remains. 
