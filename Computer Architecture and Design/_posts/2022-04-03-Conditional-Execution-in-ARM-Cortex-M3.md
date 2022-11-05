@@ -41,7 +41,7 @@ BLE exit
 CMP r2 , r3
 BLE exit
 MOV r4 , r5
-exit:
+exit :
 {% endhighlight %}
 
 #### 2. Using an *IT* block
