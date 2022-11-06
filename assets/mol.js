@@ -75,7 +75,7 @@ var particles = [];
 window.onload = function(){
     
     for (let x=0;x<3;x++){
-        particles.push(new particle("red",Math.floor(Math.random() * 101),Math.floor(Math.random() * 101),50));
+        particles.push(new particle("red",Math.floor(Math.random() * 101),Math.floor(Math.random() * 101),10));
         particles[x].xvel=Math.random()*10;
         particles[x].yvel=Math.random()*10;
     }

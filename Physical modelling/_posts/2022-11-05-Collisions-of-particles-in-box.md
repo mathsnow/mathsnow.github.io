@@ -1,5 +1,5 @@
 # Collisions of some particles in a container
 
-<canvas id="canvas" width="700" height="500"></canvas>
+<canvas id="canvas" style = "border = solid 1px red; width=fit-parent; height=fit-parent;"></canvas>
 
 <script src="/assets/mol.js"></script>
